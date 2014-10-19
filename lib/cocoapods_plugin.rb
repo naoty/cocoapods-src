@@ -1,1 +1,1 @@
-require 'pod/command/src'
+require "pod/hook/post_install"

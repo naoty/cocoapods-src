@@ -1,6 +1,8 @@
 # cocoapods-src
 
-cocoapods-src is a CocoaPods plugin that `git clone` the pod's source.
+cocoapods-src is a CocoaPods plugin for automatic `git clone`.
+
+This rubygem is inspired by [amatsuda/gem-src](https://github.com/amatsuda/gem-src).
 
 ## Installation
 
@@ -11,17 +13,10 @@ $ gem install cocoapods-src
 ## Usage
 
 ```bash
-$ pod src NTYAirData
+$ pod install
 ```
 
-`pod src NAME` command clones the repo into `~/.cocoapods/src/NAME`.
-
-```bash
-$ cd YOUR_PROJECT
-$ pod src
-```
-
-`pod src` command at your project root clones repos listed at `Podfile`.
+After `pod install`, automatically `git clone POD_SOURCE ~/.cocoapods/src/POD_NAME` will be run.
 
 ## Contribution
 
