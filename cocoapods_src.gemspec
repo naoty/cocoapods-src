@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = CocoapodsSrc::VERSION
   spec.authors       = ["Naoto Kaneko"]
   spec.email         = ["naoty.k@gmail.com"]
-  spec.description   = %q{A short description of cocoapods-src.}
-  spec.summary       = %q{A longer description of cocoapods-src.}
-  spec.homepage      = "https://github.com/EXAMPLE/cocoapods-src"
+  spec.description   = %q{CocoaPods plugin to `git clone` pod's source}
+  spec.summary       = %q{CocoaPods plugin to `git clone` pod's source}
+  spec.homepage      = "https://github.com/naoty/cocoapods-src"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
