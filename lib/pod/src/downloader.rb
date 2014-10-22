@@ -17,7 +17,8 @@ module Pod
             download_by_ghq(source_url)
           else
             target_path = target_dir.join(spec.name)
-            download_by_pod_downloader(target_path, source_url) if target_path.exist?
+            next if target_path.exist?
+            download_by_pod_downloader(target_path, source_url)
           end
         end
       end
@@ -33,7 +34,7 @@ module Pod
       end
 
       def use_ghq?
-        true
+        !Pod.rc.nil? && Pod.rc["use_ghq"]
       end
 
       def download_by_ghq(source_url)
