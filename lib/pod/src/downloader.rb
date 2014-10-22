@@ -34,7 +34,7 @@ module Pod
       end
 
       def use_ghq?
-        !Pod.rc.nil? && Pod.rc["use_ghq"]
+        !Pod.rc.nil? && Pod.rc["cocoapods-src_use_ghq"]
       end
 
       def download_by_ghq(source_url)

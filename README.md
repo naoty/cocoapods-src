@@ -23,7 +23,7 @@ After `pod install`, automatically `git clone POD_SOURCE ~/.cocoapods/src/POD_NA
 You can download sources using `ghq` command ([motemen/ghq](https://github.com/motemen/ghq)) instead of `git clone`. If you like to do it, add `~/.podrc`, `~/.cocoapods/.podrc`, or `./.podrc`, and add a configuration like this.
 
 ```yaml
-use_ghq: true
+cocoapods-src_use_ghq: true
 ```
 
 ## Contribution
